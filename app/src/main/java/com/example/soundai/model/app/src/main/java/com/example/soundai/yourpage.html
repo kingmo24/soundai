@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Marketing AI</title>
+    <meta name="description" content="Click here to go back to Sound Marketing">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn.shopify.com/s/files/1/0033/3234/1875/files/CENTERED.jpg?v=1613167192" type="image/jpeg">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Emoji Picker CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/@joeattardi/emoji-button@4.6.2/dist/index.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/luxon"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=DOMMatrix"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=DOMMatrix,Path2D"></script>
+
+
+    <!-- Include Google Charts Loader -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include AnyChart Library -->
+    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-bundle.min.js"></script>
+
+    <!-- Include D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- Plotly Library -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <!-- CanvasJS Library -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <a href="https://soundmarketing.org" title="Click here to go back to Sound Marketing">
+                <img src="https://cdn.shopify.com/s/files/1/0033/3234/1875/files/CENTERED.jpg?v=1613167192" alt="Sound Marketing Logo" class="logo">
+            </a>
+            <div class="header-text">
+                <a href="https://soundmarketing.org" title="Click here to go back to Sound Marketing" style="text-decoration: none; color: inherit;">
+                    <h1>Sound Marketing</h1>
+                </a>
+                <p class="status" id="status">Connected</p>
+            </div>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+        </header>
+
+        <main class="chat-window" id="chat-window">
+            <div class="messages" id="messages" aria-live="polite"></div>
+            <div class="typing-indicator" id="typing-indicator" aria-live="polite">
+                <span>Sound Marketing is typing</span><span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>
+            </div>
+        </main>
+
+        <div class="input-container">
+            <button id="toggleFileUpload" class="file-toggle-button" aria-label="Upload File">
+                <i class="fas fa-paperclip"></i>
+            </button>
+
+            <input type="file" id="fileInput" class="file-input" style="display: none;" accept=".pdf,.txt,.docx,.xlsx,.jpeg,.jpg,.png">
+
+            <input type="text" id="userInput" placeholder="Type your message..." autocomplete="off" aria-label="Type your message">
+
+            <button id="sendButton" type="button" aria-label="Send Message">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+
+        <div class="chat-actions">
+            <button id="clearChat" class="action-button"><i class="fas fa-trash-alt"></i> Clear Chat</button>
+            <button id="exportChat" class="action-button"><i class="fas fa-file-export"></i> Export Chat</button>
+        </div>
+
+        <footer class="chat-footer">
+            <p>Disclaimer: This chatbot is for informational purposes only and does not constitute legal advice. Consult a professional for legal matters.</p>
+        </footer>
+    </div>
+
+    <!-- PDF.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.8.162/pdf.min.js"></script>
+
+    <!-- Mammoth.js for Word documents -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+
+    <!-- SheetJS for Excel files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+    <!-- Emoji Picker and Custom Scripts -->
+    <script src="https://unpkg.com/@joeattardi/emoji-button@4.6.2/dist/index.js"></script>
+
+    <!-- Tesseract.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+
+    <!-- Marked.js Library for Markdown -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
