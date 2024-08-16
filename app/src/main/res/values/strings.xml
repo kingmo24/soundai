@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Sound AI</string>
+    <string name="app_name">SoundAI</string>
+    <string name="soundai">SoundAI</string>
 </resources>

@@ -1,14 +1,18 @@
 package com.example.soundai.model;
 
-import java.util.List;
-
 public class ChatResponse {
-    private List<Message> messages;
+    private String reply;
 
-    public ChatResponse(List<Message> messages) {
-        this.messages = messages;
+    public ChatResponse(String reply) {
+        this.reply = reply;
     }
 
-    // Getters and Setters
+    public String getReply() {
+        return reply;
+    }
+
+    public void setReply(String reply) {
+        this.reply = reply;
+    }
 }
 
