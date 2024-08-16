@@ -1,18 +1,13 @@
 package com.example.soundai.model;
 
 public class ChatResponse {
-    private String reply;
+    private String responseMessage;
 
-    public ChatResponse(String reply) {
-        this.reply = reply;
+    public String getResponseMessage() {
+        return responseMessage;
     }
 
-    public String getReply() {
-        return reply;
-    }
-
-    public void setReply(String reply) {
-        this.reply = reply;
+    public void setResponseMessage(String responseMessage) {
+        this.responseMessage = responseMessage;
     }
 }
-
